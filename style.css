@@ -699,6 +699,9 @@ textarea:focus {
 }
 
 .main_nav_2 li a img {
+    display: block;
+    max-width: 70%;
+    max-height: 70%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1069,23 +1072,23 @@ textarea:focus {
     text-shadow: 0 1px 2px rgba(0, 0, 0, .35);
     text-transform: uppercase;
     color: #fff;
-    -webkit-transition-property: bottom;
+    -webkit-transition-property: bottom, color;
     -webkit-transition-duration: .5s;
     -webkit-transition-timing-function: ease;
 
-    -moz-transition-property: bottom;
+    -moz-transition-property: bottom, color;
     -moz-transition-duration: .5s;
     -moz-transition-timing-function: ease;
 
-    -ms-transition-property: bottom;
+    -ms-transition-property: bottom, color;
     -ms-transition-duration: .5s;
     -ms-transition-timing-function: ease;
 
-    -o-transition-property: bottom;
+    -o-transition-property: bottom, color;
     -o-transition-duration: .5s;
     -o-transition-timing-function: ease;
 
-    transition-property: bottom;
+    transition-property: bottom, color;
     transition-duration: .5s;
     transition-timing-function: ease;
 }
@@ -1100,6 +1103,7 @@ textarea:focus {
 
 .promo_thumb:hover h3 {
     bottom: 30px;
+    color: #789e2d;
 }
 
 .promo_thumb.active h3 {

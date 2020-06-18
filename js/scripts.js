@@ -32,7 +32,7 @@ $(document).ready(function() {
         $(".promo_slider").not(".slick-initialized").slick({
             dots: true,
             arrows: false,
-            // autoplay: true,
+            autoplay: true,
             autoplaySpeed: 4000,
             speed: 1200,
             slidesToShow: 1,
