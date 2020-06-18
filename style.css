@@ -649,7 +649,7 @@ textarea:focus {
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center;
-    padding: 10px 25px;
+    padding: 10px 35px;
     -webkit-box-shadow: 0 3px 7px 0 rgba(13, 16, 7, .35);
     -moz-box-shadow: 0 3px 7px 0 rgba(13, 16, 7, .35);
     box-shadow: 0 3px 7px 0 rgba(13, 16, 7, .35);
