@@ -1,0 +1,25 @@
+<svg id="почта" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="33" height="33.031" viewBox="0 0 33 33.031">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #010a05;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="1595.5" y="169.781" width="23.09" height="16.5" filterUnits="userSpaceOnUse">
+      <feFlood result="flood"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path id="Прямоугольник_879" data-name="Прямоугольник 879" class="cls-1" d="M1591,161.978h33V195h-33V161.978Z" transform="translate(-1591 -161.969)"/>
+  <path id="Фигура_880" data-name="Фигура 880" class="cls-2" d="M1618.2,185.4L1609.17,178l9.03-7.394a2.093,2.093,0,0,1,.4,1.156V184.24A1.992,1.992,0,0,1,1618.2,185.4Zm-21.91-15.282a1.88,1.88,0,0,1,1.1-.33h19.15a1.88,1.88,0,0,1,1.1.33l-10.67,8.751Zm-0.47,15.282a1.958,1.958,0,0,1-.32-1.156V171.765a2,2,0,0,1,.32-1.156l9,7.394Zm10.91-5.761a0.371,0.371,0,0,0,.24.074,0.344,0.344,0,0,0,.23-0.074l1.39-1.155,9.05,7.448a1.91,1.91,0,0,1-1.1.367h-19.15a1.91,1.91,0,0,1-1.1-.367l9.05-7.448Z" transform="translate(-1591 -161.969)"/>
+</svg>
