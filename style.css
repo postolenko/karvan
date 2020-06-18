@@ -43,8 +43,6 @@
     font-display: swap;
 }
 
-
-
 /*-------------------------------------------*/
 /* BASIC SETUP */
 /*-------------------------------------------*/
@@ -70,8 +68,7 @@ body {
 
 body {
     background: #ffffff;
-    /*font-family: "Lato";*/
-    font-family: "Arial";
+    font-family: "Lato";
     font-size: 24px;
     line-height: 1.5;
     color: #000000;
@@ -219,7 +216,6 @@ h4 {
 
 p {
     font-family: "Lato";
-    /*font-family: "Arial";*/
     font-size: 24px;
     line-height: 1.5;
     color: #000000;
@@ -229,7 +225,6 @@ p {
 a {
     text-decoration: none;
     font-family: "Lato";
-    /*font-family: "Arial";*/
     font-size: 24px;
     line-height: 1.5;
     color: #000000;
@@ -239,7 +234,6 @@ a {
 li {
     list-style: none;
     font-family: "Lato";
-    /*font-family: "Arial";*/
     font-size: 24px;
     line-height: 1.5;
     color: #000000;
@@ -668,7 +662,7 @@ textarea:focus {
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center;
-    padding: 10px 35px;
+    padding: 10px 25px;
     -webkit-box-shadow: 0 3px 7px 0 rgba(13, 16, 7, .35);
     -moz-box-shadow: 0 3px 7px 0 rgba(13, 16, 7, .35);
     box-shadow: 0 3px 7px 0 rgba(13, 16, 7, .35);
