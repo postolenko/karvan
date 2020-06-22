@@ -6,6 +6,19 @@
 
 @font-face {
     font-family: "Lato";
+    src: url("fonts/Lato-Medium.eot");
+    src: url("fonts/Lato-Medium.eot?#iefix") format("embedded-opentype"),
+        url("fonts/Lato-Medium.woff2") format("woff2"),
+        url("fonts/Lato-Medium.woff") format("woff"),
+        url("fonts/Lato-Medium.ttf") format("truetype"),
+        url("fonts/Lato-Medium.svg#fonts/Lato-Medium") format("svg");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Lato";
     src: url("fonts/Lato-Regular.eot");
     src: url("fonts/Lato-Regular.eot?#iefix") format("embedded-opentype"),
         url("fonts/Lato-Regular.woff2") format("woff2"),
@@ -13,19 +26,6 @@
         url("fonts/Lato-Regular.ttf") format("truetype"),
         url("fonts/Lato-Regular.svg#fonts/Lato-Regular") format("svg");
     font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Lato";
-    src: url("fonts/Lato-Bold.eot");
-    src: url("fonts/Lato-Bold.eot?#iefix") format("embedded-opentype"),
-        url("fonts/Lato-Bold.woff2") format("woff2"),
-        url("fonts/Lato-Bold.woff") format("woff"),
-        url("fonts/Lato-Bold.ttf") format("truetype"),
-        url("fonts/Lato-Bold.svg#fonts/Lato-Bold") format("svg");
-    font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
@@ -45,17 +45,16 @@
 
 @font-face {
     font-family: "Lato";
-    src: url("fonts/Lato-Medium.eot");
-    src: url("fonts/Lato-Medium.eot?#iefix") format("embedded-opentype"),
-        url("fonts/Lato-Medium.woff2") format("woff2"),
-        url("fonts/Lato-Medium.woff") format("woff"),
-        url("fonts/Lato-Medium.ttf") format("truetype"),
-        url("fonts/Lato-Medium.svg#Lato-Medium") format("svg");
-    font-weight: 500;
+    src: url("fonts/Lato-Bold.eot");
+    src: url("fonts/Lato-Bold.eot?#iefix") format("embedded-opentype"),
+        url("fonts/Lato-Bold.woff2") format("woff2"),
+        url("fonts/Lato-Bold.woff") format("woff"),
+        url("fonts/Lato-Bold.ttf") format("truetype"),
+        url("fonts/Lato-Bold.svg#fonts/Lato-Bold") format("svg");
+    font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
-
 
 /*-------------------------------------------*/
 /* BASIC SETUP */
@@ -1008,6 +1007,19 @@ textarea:focus {
     position: relative;
 }
 
+.promo_thumb video {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
 .promo_thumb:last-child {
     width: calc(100% - 16px);
 }
@@ -1253,7 +1265,7 @@ textarea:focus {
     border: 1px solid #000;
     background: transparent;
     position: absolute;
-    top: 5px;
+    top: 3px;
     left: 0;
 }
 
@@ -1649,6 +1661,8 @@ textarea:focus {
 
 /*-- /Section 1 - Clients --*/
 
+/*-- Fancybox Gallery --*/
+
 .fancybox_gallery {
     display: flex;
     flex-wrap: wrap;
@@ -1661,18 +1675,12 @@ textarea:focus {
     padding: 10px;
 }
 
-.fancybox_gallery .descript {
-
-}
-
 .fancybox_gallery .descript p {
     font-size: 16px;
     line-height: 18px;
     font-weight: bold;
     color: #000;
 }
-
-
 
 .fancybox_thumbs {
   display: flex;
@@ -1689,18 +1697,6 @@ textarea:focus {
   display: block;
   max-width: 100%;
 }
-
-/*ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}*/
-
-.fancybox-skin .fancybox-title-over-wrap {
-  right: 0;
-  left: auto;
-}
-
 
 .slide_info {
     width: 300px;
@@ -1740,16 +1736,13 @@ textarea:focus {
     width: 50%;
 }
 
-.slide_info p span:nth-child(2) {
-    /*width: 50%;*/
-    /*text-align: right;*/
-}
-
 .fancybox-slide--current .slide_info {
     position: absolute !important;
     bottom: -25px !important;
     right: 0!important;
 }
+
+/*-- /Fancybox Gallery --*/
 
 
 
@@ -2194,4 +2187,178 @@ footer {
 
 /*-- /Animation --*/
 
+/*-- Popup --*/
 
+body.fixed {
+    width: 100%;
+    padding-right: 20px;
+    overflow: hidden;
+}
+
+.popup {
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+}
+
+.popup_bg {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(234, 234, 234, .85);
+    z-index: 19;
+}
+
+.close_popup {
+    display: block;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    background-color: transparent;
+    background-image: url(img/close.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.popup_content {
+    max-width: 370px;
+    margin: 70px auto 20px auto;
+    position: relative;
+    z-index: 2;
+    background-color: #fff;
+}
+
+.popup_content .close_popup {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+}
+
+.succesPopupLink {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+}
+
+.popup_form {
+    padding: 32px 30px 13px 30px;
+    border: 2px solid #fff;
+    background: rgba(0, 0, 0, .8);
+    /*max-width: 366px;*/
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.6);
+    -moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,.6);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.6);
+}
+
+.popup_form_title {
+    padding: 10px 0;
+}
+
+.popup_form_title h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.input_wrapp {
+    margin: 9px 0;
+}
+
+.input_wrapp input {
+    display: block;
+    width: 100%;
+    padding: 0 15px;
+    border: 1px solid transparent;
+    text-transform: uppercase;
+    font-family: "Lato";
+    font-size: 16px;
+    line-height: 34px;
+    font-weight: bold;
+    background: #fff;
+}
+
+.input_wrapp textarea {
+    display: block;
+    width: 100%;
+    height: 90px;
+    padding: 3px 15px;
+    border: 1px solid transparent;
+    font-family: "Lato";
+    font-size: 16px;
+    line-height: 23px;
+    font-weight: bold;
+    background: #fff;
+}
+
+.submit_wrapp {
+    padding: 15px 0;
+    text-align: center;
+}
+
+.submit_wrapp .green_btn {
+    display: inline-block;
+    vertical-align: top;
+    width: auto;
+    min-width: 200px;
+}
+
+.dropdown_files {
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+.dropdown_files label {
+    cursor: pointer;
+    font-family: "Lato";
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: bold;
+    color: #fff;
+    position: relative;
+    padding: 0 0 0 25px;
+}
+
+.dropdown_files input {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.upload {
+    display: inline-block;
+    vertical-align: top;
+    width: 15px;
+    height: 18px;
+    background-image: url(img/upload.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.dropdown_files .upload {
+    position: absolute;
+    top: -2px;
+    left: 0;
+}
+
+/*-- /Popup  --*/
