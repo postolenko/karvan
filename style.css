@@ -973,7 +973,7 @@ textarea:focus {
     max-width: 1300px;
     text-align: right;
     position: absolute;
-    bottom: -2px;
+    bottom: 9px;
     left: 50%;
     -webkit-transform: translate(-50%, 0);
     -moz-transform: translate(-50%, 0);
@@ -995,7 +995,8 @@ textarea:focus {
     display: -webkit-flex;
     flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
-    margin: 0 -8px;
+    /*margin: 0 -8px;*/
+    padding: 0 8px;
 }
 
 .promo_thumb {
@@ -1648,12 +1649,107 @@ textarea:focus {
 
 /*-- /Section 1 - Clients --*/
 
+.fancybox_gallery {
+    display: flex;
+    flex-wrap: wrap;
+    height: 0;
+    overflow: hidden;
+}
+
+.fancybox_gallery .slide {
+    width: 33.33%;
+    padding: 10px;
+}
+
+.fancybox_gallery .descript {
+
+}
+
+.fancybox_gallery .descript p {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: bold;
+    color: #000;
+}
 
 
 
+.fancybox_thumbs {
+  display: flex;
+}
+
+.fancybox_thumbs a {
+  display: block;
+  margin: 0 10px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.fancybox_thumbs img {
+  display: block;
+  max-width: 100%;
+}
+
+/*ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}*/
+
+.fancybox-skin .fancybox-title-over-wrap {
+  right: 0;
+  left: auto;
+}
 
 
+.slide_info {
+    width: 300px;
+    padding: 8px 35px 12px 35px !important;
+    background-color: #779d2d !important;
+    position: relative;
+    -webkit-box-shadow: 0 3px 7px 0 rgba(13, 16, 7, .1);
+    -moz-box-shadow: 0 3px 7px 0 rgba(13, 16, 7, .1);
+    box-shadow: 0 3px 7px 0 rgba(13, 16, 7, .1);
+}
 
+.slide_info:before {
+    display: block;
+    content: "";
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    border: 1px solid #ffffff;
+}
+
+.slide_info p {
+    display: flex;
+    display: -webkit-flex;
+    padding: 5px 0;
+    font-family: "Lato";
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: bold;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+}
+
+.slide_info p span {
+    width: 50%;
+}
+
+.slide_info p span:nth-child(2) {
+    /*width: 50%;*/
+    /*text-align: right;*/
+}
+
+.fancybox-slide--current .slide_info {
+    position: absolute !important;
+    bottom: -25px !important;
+    right: 0!important;
+}
 
 
 
