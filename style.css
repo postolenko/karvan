@@ -1768,6 +1768,7 @@ textarea:focus {
     position: absolute !important;
     bottom: -25px !important;
     right: 0!important;
+    z-index: 129999;
 }
 
 /*-- /Fancybox Gallery --*/

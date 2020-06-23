@@ -405,6 +405,21 @@
 
 	/*-- /Section 1 - Clients --*/
 
+	/*-- Popups --*/
+
+	.slide_info {
+	    width: 280px;
+	    padding: 8px 20px 12px 20px !important;
+	}
+
+	.slide_info p {
+	    padding: 3px 0;
+	    font-size: 14px;
+	    line-height: 16px;
+	}
+
+	/*-- /Popups --*/
+
 }
 
 @media only screen and (max-width: 750px) {
