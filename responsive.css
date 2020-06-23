@@ -624,6 +624,31 @@
 
 /*-- /Footer --*/
 
+/*-- Popups --*/
+
+.popup_content {
+    max-width: 300px;
+}
+
+.popup_form_title {
+    padding: 5px 0;
+}
+
+.popup_form {
+    padding: 23px 20px 13px 20px;
+}
+
+.popup_form_title h3 {
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.submit_wrapp {
+    padding: 8px 0;
+}
+
+/*-- /Popups --*/
+
 }
 
 
