@@ -1,5 +1,28 @@
 @media only screen and (max-width: 1600px) {
 
+	/*-- Section 2 -About --*/
+
+	.about_article h2 {
+	    padding: 15px 0;
+	    font-size: 52px;
+	}
+
+	.about_article p {
+	    padding: 14px 0;
+	    font-size: 37px;
+	    line-height: 48px;
+	}
+
+	/*-- /Section 2 -About --*/
+
+	/*-- Section 1 - Catalog --*/
+
+	.good_thumb {
+    	width: calc(50% - 30px);
+    }
+
+    /*-- /Section 1 - Catalog --*/
+
 	/*-- Footer --*/
 
 	.footer_row_1 {
@@ -29,6 +52,18 @@
 	}
 
 	/*-- /Footer --*/
+
+}
+
+@media only screen and (max-width: 1300px) {
+
+/*-- Section 1 - Clients --*/
+
+.clients_thumbs .client_thumb {
+    width: calc(20% - 20px);
+}
+
+/*-- /Section 1 - Clients --*/
 
 }
 
@@ -86,6 +121,22 @@
 
 	/*-- /Section 2 - Main --*/
 
+	/*-- Section 1 - Catalog --*/
+
+	.catalog_templ .left {
+	    width: 255px;
+	}
+
+	.catalog_templ .right {
+	    width: calc(100% - 255px);
+	}
+
+	.filter_wrapp {
+	    padding: 20px 20px 13px 20px;
+	}
+
+	/*-- /Section 1 - Catalog --*/
+
 	/*-- Footer --*/
 
 	.inner_two_cols .inner_col_1 {
@@ -121,6 +172,23 @@
 	}
 
 	/*-- /Header --*/
+
+	/*-- Section 1 - Catalog --*/
+
+	.thumb_modal {
+	    padding: 15px;
+	    width: calc(100% - 30px);
+	}
+
+	/*-- /Section 1 - Catalog --*/
+
+	/*-- Section 1 - Clients --*/
+
+	.clients_thumbs .client_thumb {
+	    width: calc(25% - 20px);
+	}
+
+	/*-- /Section 1 - Clients --*/
 
 }
 
@@ -167,6 +235,45 @@
 
 	/*-- /Header --*/
 
+	/*-- Section 1 - Catalog --*/
+
+	.catalog_templ .left {
+	    width: 100%;
+	    padding: 5px 0;
+	}
+
+	.catalog_templ .right {
+	    width: 100%;
+	    padding: 5px 0;
+	}
+
+	.filter_wrapp {
+	    margin: 5px 0;
+	}
+
+	.banner_wrapp {
+		display: none;
+	}
+
+	.goods_thumbnails {
+	    margin: 10px -8px;
+	}
+
+	.good_thumb {
+	    width: calc(50% - 16px);
+	    margin: 8px;
+	}
+
+	.filter_btn {
+	    display: block !important;
+	}
+
+	.dropdown_filter {
+		display: none;
+	}
+
+	/*-- /Section 1 - Catalog --*/
+
 }
 
 @media only screen and (max-width: 900px) {
@@ -203,6 +310,20 @@
 	}
 
 	/*-- /Section 2 - Main --*/
+
+	/*-- Section 2 -About --*/
+
+	.about_article h2 {
+	    font-size: 44px;
+	}
+
+	.about_article p {
+	    padding: 14px 0;
+	    font-size: 29px;
+	    line-height: 40px;
+	}
+
+	/*-- /Section 2 -About --*/
 
 	/*-- Footer --*/
 
@@ -242,6 +363,10 @@
 
 @media only screen and (max-width: 767px) {
 
+	h1 {
+	    font-size: 36px;
+	}
+
 	/*-- Section 2 - Main --*/
 
 	h3 {
@@ -253,6 +378,32 @@
 	}
 
 	/*-- /Section 2 - Main --*/
+
+	/*-- Section 2 -About --*/
+
+	.about_article h2 {
+	    font-size: 36px;
+	}
+
+	.about_article p {
+	    padding: 9px 0;
+	    font-size: 24px;
+	    line-height: 30px;
+	}
+
+	/*-- /Section 2 -About --*/
+
+	/*-- Section 1 - Clients --*/
+
+	.client_thumb {
+	    height: 115px;
+	}
+
+	.clients_thumbs .client_thumb {
+	    width: calc(33.33% - 20px);
+	}
+
+	/*-- /Section 1 - Clients --*/
 
 }
 
@@ -338,6 +489,14 @@
 
 	/*-- /Section 2 - Main --*/
 
+	/*-- Section 1 - Catalog --*/
+
+	.catalog_sect {
+	    padding-top: 45px;
+	}
+
+	/*-- /Section 1 - Catalog --*/
+
 	/*-- Footer --*/
 
 	.footer_row_1 .left,
@@ -369,7 +528,28 @@
 
 }
 
+@media only screen and (max-width: 700px) {
+
+/*-- Section 1 - Catalog --*/
+
+.goods_thumbnails {
+    margin: 10px 0;
+}
+
+.good_thumb {
+    width: 100%;
+    margin: 8px 0;
+}
+
+/*-- /Section 1 - Catalog --*/
+
+}
+
 @media only screen and (max-width: 600px) {
+
+.row {
+    padding: 0 15px;
+}
 
 /*-- Header --*/
 
@@ -403,6 +583,29 @@
 }
 
 /*-- /Header --*/
+
+/*-- Section 2 -About --*/
+
+.about_article h2 {
+    font-size: 29px;
+}
+
+.about_article p {
+    padding: 5px 0;
+    font-size: 21px;
+    line-height: 27px;
+}
+
+/*-- /Section 2 -About --*/
+
+/*-- Section 1 - Catalog --*/
+
+.thumb_modal {
+    padding: 10px;
+    width: calc(100% - 20px);
+}
+
+/*-- /Section 1 - Catalog --*/
 
 /*-- Footer --*/
 
@@ -461,7 +664,7 @@
 	/*-- Section 1 - Main --*/
 
 	h2 {
-	    font-size: 19px;
+	    font-size: 22px;
 	}
 
 	p {
@@ -487,14 +690,34 @@
 
 	/*-- /Section 2 - Main --*/
 
+	/*-- Section 1 - Clients --*/
+
+	.clients_thumbs .client_thumb {
+	    width: calc(50% - 20px);
+	}
+
+	/*-- /Section 1 - Clients --*/
+
 	/*-- Footer --*/
 
 	.footer_row_1 {
 	    padding: 25px 15px;
 	}
 
-	/*-- /cFooter --*/
+	/*-- /Footer --*/
 	
+}
+
+@media only screen and (min-width: 1025px) {
+
+/*-- Section 1 - Catalog --*/
+
+.dropdown_filter {
+	display: block !important;
+}
+
+/*-- /Section 1 - Catalog --*/
+
 }
 
 @media only screen and (min-width: 751px) {

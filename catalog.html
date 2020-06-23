@@ -23,7 +23,8 @@
 			<div class="header_row_1">
 				<div class="left">
 					<a href="#" class="logo">
-						<img src="img/logo.png" alt="" />
+						<img class="desk_logo" src="img/logo.png" alt="" />
+						<img class="resp_logo" src="img/logo_resp.png" alt="" />
 					</a>
 				</div>
 				<div class="right">
@@ -34,14 +35,20 @@
 					</ul>
 				</div>
 			</div>
-			<div class="main_nav_wrapp" id="resp_nav">
+			<div class="main_nav_wrapp">
 				<ul class="main_nav">
 					<li><a href="#">Home page</a></li>
 					<li><a href="#">About Us</a></li>
 					<li><a href="#">Our clients</a></li>
 				</ul>
+				<button class="respmenubtn">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
 			</div>
-			<div class="main_nav_2_wrapp">
+			<div class="main_nav_2_wrapp" id="resp_nav">
+				<button type="button" class="close_nav"></button>
 				<ul class="main_nav_2 animate fadeInUp">
 					<li>
 						<a href="#">
@@ -81,11 +88,6 @@
 				</ul>
 			</div>
 		</div>
-<!-- <button class="respmenubtn">
-<span></span>
-<span></span>
-<span></span>
-</button> -->								
 	</header>
 
 	<!-- /Header -->
@@ -100,29 +102,34 @@
 					</div>
 					<div class="catalog_templ">
 						<div class="left">
-							<div class="filter_wrapp">
-								<div class="filter_title">
-									<h3>Graphics</h3>
-								</div>
-								<div class="filters_list">
-									<div>
-										<label class="filter_ch"><input type="checkbox" name="">Реклама</label>
+							<div class="dropdown_filter_wrapp">
+								<button type="button" class="green_btn filter_btn" data-dropdownbtn = "drp_1">Меню</button>
+								<div class="dropdown_filter" data-dropdown = "drp_1">
+									<div class="filter_wrapp">
+										<div class="filter_title">
+											<h3>Graphics</h3>
+										</div>
+										<div class="filters_list">
+											<div>
+												<label class="filter_ch"><input type="checkbox" name="">Реклама</label>
+											</div>
+											<div>
+												<label class="filter_ch"><input type="checkbox" name="">Мультфильм</label>
+											</div>
+											<div>
+												<label class="filter_ch"><input type="checkbox" name="">Обучение</label>
+											</div>
+											<div>
+												<label class="filter_ch"><input type="checkbox" name="">Инструкция</label>
+											</div>
+											<div>
+												<label class="filter_ch"><input type="checkbox" name="">Превью</label>
+											</div>
+										</div>
+										<div class="green_btn_wrapp">
+											<button type="button" class="green_btn">Смотреть</button>
+										</div>
 									</div>
-									<div>
-										<label class="filter_ch"><input type="checkbox" name="">Мультфильм</label>
-									</div>
-									<div>
-										<label class="filter_ch"><input type="checkbox" name="">Обучение</label>
-									</div>
-									<div>
-										<label class="filter_ch"><input type="checkbox" name="">Инструкция</label>
-									</div>
-									<div>
-										<label class="filter_ch"><input type="checkbox" name="">Превью</label>
-									</div>
-								</div>
-								<div class="green_btn_wrapp">
-									<button type="button" class="green_btn">Смотреть</button>
 								</div>
 							</div>
 							<div class="banner_wrapp"></div>

@@ -172,6 +172,17 @@ $(document).ready(function() {
               $(".respmenubtn").removeClass("active");
       }
   });
- 
+
+  // -----------
+
+  $("[data-dropdownbtn]").on("click", function(e) {
+    e.preventDefault();
+    var dropdownMenu = $("[data-dropdown = '"+$(this).attr('data-dropdownbtn')+"']");
+    if(dropdownMenu.is(":hidden")) {
+      dropdownMenu.slideDown(300);
+    } else {
+      dropdownMenu.slideUp(300);
+    }
+  });
 
 });
