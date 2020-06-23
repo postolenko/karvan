@@ -522,6 +522,10 @@ textarea:focus {
     max-width: 100%;
 }
 
+.logo img.resp_logo {
+    display: none;
+}
+
 .contacts_list {
     display: flex;
     display: -webkit-flex;
@@ -646,6 +650,26 @@ textarea:focus {
     position: absolute;
     top: 100%;
     left: 0;
+}
+
+.close_nav {
+    display: block;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    background-color: transparent;
+    background-image: url(img/close.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.main_nav_2_wrapp .close_nav {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }
 
 .main_nav_2 {
@@ -833,7 +857,7 @@ textarea:focus {
     display: block;
     width: 27px;
     height: 2px;
-    background: #466896;
+    background: #fff;
     margin: 0 auto 7px auto;
     -webkit-transition-property: transform, border, background;
     -webkit-transition-duration: .3s;
@@ -866,7 +890,7 @@ textarea:focus {
 }
 
 .respmenubtn:hover span {
-    background: #e9ba5f;
+    background: #fff;
 }
 
 .respmenubtn.active span {
@@ -874,7 +898,7 @@ textarea:focus {
     width: 35px;
     top: 2px;
     left: 0;
-    background: #e9ba5f;
+    background: #fff;
 }
 
 .respmenubtn.active span:last-child {
@@ -970,6 +994,7 @@ textarea:focus {
 .promo_slider .slick-dots {
     width: 100%;
     max-width: 1300px;
+    padding: 0 10px;
     text-align: right;
     position: absolute;
     bottom: 9px;
